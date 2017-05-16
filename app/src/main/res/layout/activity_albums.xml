@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    tools:context="com.example.android.musicalapp.AlbumsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/albumsBackground">
+
+        <!-- Album picture with album info-->
+        <ImageView
+            android:id="@+id/albumPhotoView"
+            style="@style/playerPhoto"
+            android:contentDescription="@string/albumImgDesc"
+            android:src="@drawable/lydmor" />
+
+        <TextView
+            android:id="@+id/albumTitleView"
+            style="@style/textViewsOnplayerPhoto"
+            android:layout_margin="@dimen/margin16dp"
+            android:background="@color/titleBGcolor"
+            android:text="@string/albumtitle"
+            android:textSize="@dimen/textsize30" />
+
+        <TextView
+            android:id="@+id/artistView"
+            style="@style/textViewsOnplayerPhoto"
+            android:layout_alignLeft="@+id/albumTitleView"
+            android:layout_below="@+id/albumTitleView"
+            android:background="@color/artistBGcolor"
+            android:text="@string/artist"
+            android:textSize="@dimen/textsize18" />
+
+        <TextView
+            android:id="@+id/aldumDurationView"
+            style="@style/textViewsOnplayerPhoto"
+            android:layout_below="@id/artistView"
+            android:layout_margin="@dimen/margin16dp"
+            android:text="@string/albumduration"
+            android:textSize="@dimen/textsize30" />
+
+        <ImageView
+            android:id="@+id/moreButton"
+            style="@style/moreButtonStyle"
+            android:layout_margin="@dimen/margin16dp"
+            android:src="@drawable/ic_more_vert_white_36dp" />
+
+        <!-- player buttons-->
+        <LinearLayout
+            android:id="@+id/player"
+            style="@style/playerLayout"
+            android:layout_marginTop="155dp"
+            android:background="@color/playerTransBackground">
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="@string/previous"
+                android:src="@drawable/ic_skip_previous_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons.Play"
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play_circle_filled_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="@string/next"
+                android:src="@drawable/ic_skip_next_white_48dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewsOnplayerPhoto"
+                android:background="@color/artistBGcolor"
+                android:text="@string/popmusic" />
+
+            <!-- albums in pop music-->
+            <HorizontalScrollView style="@style/horizontalScroll">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/album_1"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album1"
+                        android:src="@drawable/lydmor" />
+
+                    <ImageView
+                        android:id="@+id/album_2"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album2"
+                        android:src="@drawable/u2" />
+
+                    <ImageView
+                        android:id="@+id/album_3"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album3"
+                        android:src="@drawable/coldplay" />
+
+                    <ImageView
+                        android:id="@+id/album_4"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album4"
+                        android:src="@drawable/lydmor" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- Albums in rock music-->
+            <TextView
+                style="@style/textViewsOnplayerPhoto"
+                android:background="@color/artistBGcolor"
+                android:text="@string/rockmusic" />
+
+            <HorizontalScrollView style="@style/horizontalScroll">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/album_5"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album5"
+                        android:src="@drawable/coldplay" />
+
+                    <ImageView
+                        android:id="@+id/album_6"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album6"
+                        android:src="@drawable/lydmor" />
+
+                    <ImageView
+                        android:id="@+id/album_7"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album7"
+                        android:src="@drawable/u2" />
+
+                    <ImageView
+                        android:id="@+id/album_8"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album8"
+                        android:src="@drawable/lydmor" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- Albums in classic music-->
+            <TextView
+                style="@style/textViewsOnplayerPhoto"
+                android:background="@color/artistBGcolor"
+                android:text="@string/classicmusic" />
+
+            <HorizontalScrollView style="@style/horizontalScroll">
+
+                <LinearLayout
+                    android:id="@+id/classicSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/album_9"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album9"
+                        android:src="@drawable/lydmor" />
+
+                    <ImageView
+                        android:id="@+id/album_10"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album10"
+                        android:src="@drawable/coldplay" />
+
+                    <ImageView
+                        android:id="@+id/album_11"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album11"
+                        android:src="@drawable/u2" />
+
+                    <ImageView
+                        android:id="@+id/album_12"
+                        style="@style/album_cover_image"
+                        android:contentDescription="@string/album12"
+                        android:src="@drawable/lydmor" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classicSection"
+                android:text="@string/explalbumactivity"
+                style="@style/explanationTextView"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

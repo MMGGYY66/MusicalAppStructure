@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.android.musicalapp.MainActivity">
+
+    <!-- Create main menu of the musical structure app-->
+    <TextView
+        android:id="@+id/songs"
+        style="@style/CategoryStyle"
+        android:background="@color/songsBackground"
+        android:drawableRight="@drawable/ic_music_video_white_36dp"
+        android:text="@string/songs" />
+
+    <TextView
+        android:id="@+id/artists"
+        style="@style/CategoryStyle"
+        android:background="@color/artistsBackground"
+        android:drawableRight="@drawable/ic_person_white_36dp"
+        android:text="@string/artists" />
+
+    <TextView
+        android:id="@+id/albums"
+        style="@style/CategoryStyle"
+        android:background="@color/albumsBackground"
+        android:drawableRight="@drawable/ic_album_white_36dp"
+        android:text="@string/albums" />
+
+    <TextView
+        android:id="@+id/playlist"
+        style="@style/CategoryStyle"
+        android:background="@color/playlistsBackground"
+        android:drawableRight="@drawable/ic_view_list_white_36dp"
+        android:text="@string/playlist" />
+
+    <TextView
+        android:id="@+id/explanationMain"
+        style="@style/explanationTextView"
+        android:text="@string/explmainactivity" />
+
+</LinearLayout>

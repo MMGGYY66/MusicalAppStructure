@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/playlistsBackground"
+        tools:context="com.example.android.musicalapp.PlaylistsActivity">
+
+        <!-- playlist picture with playlist info-->
+        <ImageView
+            android:id="@+id/aPlaylistPhotoView"
+            style="@style/playerPhoto"
+            android:contentDescription="@string/songImgDesc"
+            android:src="@drawable/rockplaylist" />
+
+        <TextView
+            android:id="@+id/PlaylistTitleView"
+            style="@style/textViewsOnplayerPhoto"
+            android:layout_margin="@dimen/margin16dp"
+            android:background="@color/titleBGcolor"
+            android:text="@string/playListTitle"
+            android:textSize="@dimen/textsize30" />
+
+        <TextView
+            android:id="@+id/playlistDurationView"
+            style="@style/textViewsOnplayerPhoto"
+            android:layout_below="@id/PlaylistTitleView"
+            android:layout_margin="@dimen/margin16dp"
+            android:text="@string/playListDuration"
+            android:textSize="@dimen/textsize30" />
+
+        <ImageView
+            android:id="@+id/moreButton"
+            android:layout_margin="@dimen/margin16dp"
+            android:src="@drawable/ic_more_vert_white_36dp"
+            style="@style/moreButtonStyle"/>
+
+        <!-- player buttons-->
+        <LinearLayout
+            android:id="@+id/player"
+            style="@style/playerLayout"
+            android:layout_marginTop="155dp"
+            android:background="@color/playerTransBackground">
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="previous"
+                android:src="@drawable/ic_skip_previous_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons.Play"
+                android:contentDescription="play"
+                android:src="@drawable/ic_play_circle_filled_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="next"
+                android:src="@drawable/ic_skip_next_white_48dp" />
+
+        </LinearLayout>
+
+        <!-- playlist 1 - rock playlist-->
+        <LinearLayout
+            android:id="@+id/listItem"
+            style="@style/listItemStyle"
+            android:layout_below="@+id/player"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/photoViewList"
+                style="@style/photoViewListStyle"
+                android:contentDescription="@string/songImgDesc"
+                android:src="@drawable/rockplaylist" />
+
+            <LinearLayout
+                android:id="@+id/playListDetails"
+                style="@style/songDetailsStyle">
+
+                <TextView
+                    android:id="@+id/playListTitleViewList"
+                    style="@style/TextViewsInSongDetailsStyle"
+                    android:layout_marginTop="@dimen/marginTop10dp"
+                    android:text="@string/myRockPlaylist"
+                    android:textSize="@dimen/textsize18" />
+
+                <TextView
+                    android:id="@+id/playlistDurationViewList"
+                    style="@style/TextViewsInSongDetailsStyle"
+                    android:layout_marginTop="@dimen/marginTop12dp"
+                    android:text="@string/playListDurationViewList"
+                    android:textSize="@dimen/textsize14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/moreBtnViewList"
+                style="@style/moreBtnViewListStyle" />
+
+        </LinearLayout>
+
+        <!-- playlist 2 - pop playlist -->
+        <LinearLayout
+            android:id="@+id/listItem2"
+            style="@style/listItemStyle"
+            android:layout_below="@+id/listItem"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/photoViewList2"
+                style="@style/photoViewListStyle"
+                android:contentDescription="@string/songImgDesc"
+                android:src="@drawable/popplaylist" />
+
+            <LinearLayout
+                android:id="@+id/playListDetails2"
+                style="@style/songDetailsStyle">
+
+                <TextView
+                    android:id="@+id/playListTitleViewList2"
+                    style="@style/TextViewsInSongDetailsStyle"
+                    android:layout_marginTop="@dimen/marginTop10dp"
+                    android:text="@string/myPopPlaylist"
+                    android:textSize="@dimen/textsize18" />
+
+                <TextView
+                    android:id="@+id/playlistDurationViewList2"
+                    style="@style/TextViewsInSongDetailsStyle"
+                    android:layout_marginTop="@dimen/marginTop12dp"
+                    android:text="@string/playListDurationViewList2"
+                    android:textSize="@dimen/textsize14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/moreBtnViewList2"
+                style="@style/moreBtnViewListStyle" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/explanationTextView"
+            android:layout_below="@id/listItem2"
+            android:text="@string/expplaylistactivity" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+

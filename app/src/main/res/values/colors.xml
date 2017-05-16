@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#175a8f</color>
+    <color name="colorPrimaryDark">#175a8f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="songsBackground">#EF5350</color>
+    <color name="artistsBackground">#7E57C2</color>
+    <color name="playerTransBackground">#8090A4AE</color>
+    <color name="albumsBackground">#9E9E9E</color>
+    <color name="playlistsBackground">#80CBC4</color>
+    <color name="titleBGcolor">#8090A4AE</color>
+    <color name="artistBGcolor">#80EF5350</color>
+    <color name="explanationTextColor">#ffffff</color>
+</resources>

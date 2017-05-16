@@ -1,0 +1,16 @@
+package com.example.android.musicalapp;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class SubmenuActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.submenu);
+
+        //there is no functionality in this activity yet
+    }
+}
+
